@@ -107,7 +107,7 @@ webca.Event = function (text, eventview, n) {
 	}
 
 	var buttons = [
-		new OptionButton({name: "Edit", img: "edit.svg", callback: function (button) {
+		new OptionButton({name: "Edit", img: "img/edit.svg", callback: function (button) {
 			if (button.editing) {
 				var d = _DateInput.getSelectedAsDates()[0];
 				var time = 0;
@@ -122,7 +122,7 @@ webca.Event = function (text, eventview, n) {
 			} else {
 				button.editing = true;
 				button.text.nodeValue = "Save";
-				button.img.src = "save.svg";
+				button.img.src = "img/save.svg";
 				subject.style.display = "none";
 				Subject.style.display = "block";
 				contents.style.display = "none";
@@ -136,7 +136,7 @@ webca.Event = function (text, eventview, n) {
 				this.tags.style.display = "inline-block";
 			}
 		}.bind(this)}),
-		new OptionButton({name: "Delete", img: "delete.svg", callback: function (button) {
+		new OptionButton({name: "Delete", img: "img/delete.svg", callback: function (button) {
 			var intf = eventview.intf;
 			intf.removeEvent(text.id, function () {
 				eventview.panelview.dashboard.update();
@@ -147,7 +147,7 @@ webca.Event = function (text, eventview, n) {
 	this.onQuit = function () {
 		buttons[0].editing = false;
 		buttons[0].text.nodeValue = "Edit";
-		buttons[0].img.src = "edit.svg";
+		buttons[0].img.src = "img/edit.svg";
 		subject.style.display = "block";
 		Subject.style.display = "none";
 		contents.style.display = "block";

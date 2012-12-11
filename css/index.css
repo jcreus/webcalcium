@@ -51,7 +51,7 @@ html, body {
 }
 
 .nav .img-settings {
-	background:url(settings-inactive.svg) no-repeat;
+	background:url(../img/settings-inactive.svg) no-repeat;
 	vertical-align:middle;
 	background-size:20px;
 	width:20px;
@@ -61,7 +61,7 @@ html, body {
 }
 
 .nav .active .img-settings {
-	background:url(settings-active.svg) no-repeat;
+	background:url(../img/settings-active.svg) no-repeat;
 	background-size:20px;
 }
 
@@ -75,39 +75,39 @@ html, body {
 }
 
 .nav .img-add {
-	background-image:url(add-inactive.svg);
+	background-image:url(../img/add-inactive.svg);
 }
 
 .nav .active .img-add {
-	background-image:url(add-active.svg);
+	background-image:url(../img/add-active.svg);
 }
 
 .nav .img-home {
-	background-image:url(home-inactive.svg);
+	background-image:url(../img/home-inactive.svg);
 }
 
 .nav .active .img-home {
-	background-image:url(home-active.svg);
+	background-image:url(../img/home-active.svg);
 }
 
 .nav .img-information {
-	background-image:url(information-inactive.svg);
+	background-image:url(../img/information-inactive.svg);
 }
 
 .nav .active .img-information {
-	background-image:url(information-active.svg);
+	background-image:url(../img/information-active.svg);
 }
 
 .nav .img-search {
-	background-image:url(search-inactive.svg);
+	background-image:url(../img/search-inactive.svg);
 }
 
 .nav .active .img-search {
-	background-image:url(search-active.svg);
+	background-image:url(../img/search-active.svg);
 }
 
 .nav .img-back {
-	background-image:url(back-inactive.svg);
+	background-image:url(../img/back-inactive.svg);
 }
 
 .goback {
