@@ -518,6 +518,22 @@ webca.AboutView = function () {
 	this.element.appendChild(this.text);
 
 	var p = document.createElement("p");
-	p.appendChild(document.createTextNode("WebCalcium is an open source project..."));
+	p.appendChild(document.createTextNode("WebCalcium is an open source application which acts as a mix of a calendar and to-do list. You can add events, tag them, add a date; then, using the search tool, you can filter them by the previous paramaters or full-text search."));
+	this.text.appendChild(p);
+	
+	var p = document.createElement("p");
+	p.appendChild(document.createTextNode("Its interface adapts to different screens, from desktop to smartphone, with tablets in the middle. The toolbar will take more or less space according to the width, and the dual pane will be enabled in large enough screens."));
+	this.text.appendChild(p);
+	
+	var p = document.createElement("h2");
+	p.appendChild(document.createTextNode("Techincal part"));
+	this.text.appendChild(p);
+
+	var p = document.createElement("p");
+	p.appendChild(document.createTextNode("This application uses HTML5, CSS3 (transitions, media queries...) and some of the newest JavaScript interfaces (indexedDB, History API...)."));
+	this.text.appendChild(p);
+	
+	var p = document.createElement("p");
+	p.appendChild(document.createTextNode("The code is fairly organized: database interactions occur in the file 'database.js' which abstracts the rather complex indexedDB interface; the file 'library.js' contains the UI handler and is mostly independent (since styling occurs in CSS). 'views.js' is the core of it, handling the various views (dashboard, add event...)."));
 	this.text.appendChild(p);
 }
