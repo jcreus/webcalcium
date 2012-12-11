@@ -1,0 +1,354 @@
+/* Palette: http://colorschemedesigner.com/#3S21TdtooF3E8 */
+
+html, body {
+	padding:0px;
+	margin:0px;
+	font-family:'Open Sans', sans-serif;
+}
+
+.nav {
+	background:#B2B8D3;
+	margin:0px;
+	padding:0px 1%;
+}
+
+.nav li {
+	display:inline-block;
+	padding:10px;
+	margin:0px 0.5%;
+	background:#9EA8D3;
+	cursor:pointer;
+	color:#0F1948;
+	vertical-align:bottom;
+}
+
+.nav .active {
+	background:#545C85;
+	color:white;
+	font-weight:bold;
+}
+
+.nav .end {
+	float:right;
+}
+
+.nav img {
+	margin-right:5px;
+	height:20px;
+	vertical-align:middle;
+}
+.nav span {
+	vertical-align:middle;
+}
+
+.nav a {
+	color:#0F1948;
+	text-decoration:none;
+}
+
+.nav .active a {
+	color:white;
+}
+
+.nav .img-settings {
+	background:url(settings-inactive.svg) no-repeat;
+	vertical-align:middle;
+	background-size:20px;
+	width:20px;
+	height:20px;
+	display:inline-block;
+	margin-right:5px;
+}
+
+.nav .active .img-settings {
+	background:url(settings-active.svg) no-repeat;
+	background-size:20px;
+}
+
+.nav .icon-image {
+	background-size:20px;
+	background-repeat:no-repeat;
+	width:20px;
+	height:20px;
+	display:inline-block;
+	margin-right:5px;
+}
+
+.nav .img-add {
+	background-image:url(add-inactive.svg);
+}
+
+.nav .active .img-add {
+	background-image:url(add-active.svg);
+}
+
+.nav .img-home {
+	background-image:url(home-inactive.svg);
+}
+
+.nav .active .img-home {
+	background-image:url(home-active.svg);
+}
+
+.nav .img-information {
+	background-image:url(information-inactive.svg);
+}
+
+.nav .active .img-information {
+	background-image:url(information-active.svg);
+}
+
+.nav .img-search {
+	background-image:url(search-inactive.svg);
+}
+
+.nav .active .img-search {
+	background-image:url(search-active.svg);
+}
+
+.nav .img-back {
+	background-image:url(back-inactive.svg);
+}
+
+.goback {
+	display: none;
+}
+
+@media screen and (max-width:650px) {
+	.nav .icon-text {
+		display:none;
+	}
+	.nav .active .icon-text {
+		display:inline;
+	}
+	.text-panel-content {
+		width:80% !important;
+	}
+	.doshow {
+		display:block !important;
+	}
+
+	.nottoday {
+		display:none;
+	}
+
+	.nottoday + .main-panel {
+		width:100%;
+		margin-left:0px;
+	}
+	.lateral-panel:not(.nottoday) + .main-panel {
+		display:none;
+	}
+	.lateral-panel:not(.nottoday) {
+		width:100%;
+	}
+}
+
+.doshow {
+	display:none;
+}
+
+@media screen and (max-width:350px) {
+	.nav .active .icon-text {
+		display:none;
+	}
+	.text-panel-content {
+		width:95% !important;
+	}
+}
+
+.lateral-panel {
+	background:#E9DDC0;
+	margin:0px;
+	padding-left:10px;
+	padding-top:5px;
+	width:40%;
+	float:left;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.lateral-panel li {
+	display:block;
+	background:#E9D6A7;
+	color:#695015;
+	margin:5px auto;
+	padding:5px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.lateral-panel li:first-child {
+	margin-top:0px;
+}
+
+.lateral-panel .active {
+	background:#C2AA71;
+	color:white;
+	font-weight:bold;
+}
+
+.text-panel {
+	background:#E9DDC0;
+	margin:0px;
+	padding:0px;
+}
+
+.text-panel-content {
+	width:60%;
+	margin:0px auto;
+	background:#E9D6A7;
+	padding:10px;
+}
+
+.text-panel-content p:first-child {
+	margin-top:0px;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.main-panel {
+	width:60%;
+	margin-left:40%;
+	overflow-y:hidden;
+	height:200px;
+}
+
+.event-all {
+	margin-bottom:15px;
+	-moz-transition:opacity 0.5s;
+	-webkit-transition:opacity 0.5s;
+	transition:opacity 0.5s;
+}
+
+.main-panel .event-all:not(.active) {
+	opacity:0.75;
+	margin-bottom:5px;
+}
+
+.event-all ul {
+	margin-top:0px;
+}
+
+.event-text-container {
+	background:#BDB2D3;
+	padding:5px 0px;
+	-moz-transition:padding 0.5s;
+	-webkit-transition:padding 0.5s;
+	transition:padding 0.5s;
+}
+
+.main-panel .event-all:not(.active) .event-text-container {
+	padding:3px;
+}
+
+.event-text {
+	background:#AF9DD3;
+	padding:15px;
+	color:#220F48;
+	-moz-transition:padding 0.5s;
+	-webkit-transition:padding 0.5s;
+	transition:padding 0.5s;
+	margin:10px;
+}
+
+.event-date, .event-tags {
+	padding:5px 10px;
+	display:inline-block;
+	margin-bottom:0px;
+	margin-right:0px;
+	height:40px;
+}
+
+.event-date {
+	padding-top:8px;
+	padding-bottom:8px;
+}
+
+.event-tags {
+	padding-right:5px;
+	padding-left:5px;
+}
+
+.event-tags input {
+	margin-top:3px;
+}
+
+.event-tag {
+	display:inline-block;
+	border:1px solid #4A4359;
+	padding:2px 5px;
+	border-radius:3px;
+	margin:0px 3px;
+	background:#BDB2D3;
+}
+
+.main-panel .event-all:not(.active) .event-text {
+	padding:5px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	margin:0px;
+}
+
+.main-panel .event-all:not(.active) .event-subject {
+	font-weight:normal;
+}
+
+.main-panel .event-all:not(.active) .event-date, .main-panel .event-all:not(.active) .event-tags, .main-panel .event-all:not(.active) .event-contents {
+	display:none !important;
+}
+
+.event-opts {
+	background:#ACC6CF;
+	text-align:center;
+}
+
+.event-opts li {
+	background:#96C1CF;
+	display:inline-block;
+	color:#0D3542;
+	padding:10px;
+	margin:0px 1%;
+	min-width:75px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.event-opts img {
+	display: block;
+	width: 30px;
+	margin: 0 auto;
+}
+
+* ::-webkit-scrollbar{ width:9px;height:9px; background:#E9DDC0; }
+* ::-webkit-scrollbar-button:start:decrement,* ::-webkit-scrollbar-button:end:increment{display:block;height:0;background-color:#E9DDC0;}
+* ::-webkit-scrollbar-track-piece{background-color:#E9DDC0-webkit-border-radius:0;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;}
+* ::-webkit-scrollbar-thumb:vertical{height:50px;background-color:#C2AA71;-webkit-border-radius:8px;}
+* ::-webkit-scrollbar-thumb:horizontal{width:50px;background-color:#C2AA71;-webkit-border-radius:8px;}
+
+#addpanel dt, #searchpanel dt {
+	font-weight:bold;
+}
+#addpanel dt:after, #searchpanel dt:after {
+	content:":";
+}
+
+.btn {
+	background:#C2AA71;
+	font-family:'Open Sans', sans-serif;
+	padding:5px;
+	border:1px solid #82785E;
+	color:black;
+	border-radius:5px;
+}
+
+* {
+	font-family:'Open Sans', sans-serif;
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="48"
+   height="48"
+   id="svg249"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="search-active.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1272"
+     inkscape:window-height="965"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="9.9996697"
+     inkscape:cy="17.728784"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer5" />
+  <defs
+     id="defs3" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <dc:subject>
+          <rdf:Bag />
+        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/LGPL/2.1/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:creator>
+        <dc:source />
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:contributor>
+        <dc:date />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/LGPL/2.1/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/SourceCode" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer5"
+     style="display:inline">
+    <rect
+       width="48"
+       height="48"
+       x="0"
+       y="0"
+       id="rect1493"
+       style="fill:none;stroke:none" />
+    <path
+       d="M 40,20 A 20,20 0 1 1 0,20 20,20 0 1 1 40,20 z"
+       transform="matrix(-1,0,0,1,48.01255,0)"
+       id="path3244"
+       style="fill:none;fill-opacity:1;stroke:none" />
+    <path
+       d="m 18.512551,29.5 -2,6.5 -6.9999998,7.5 c -0.482472,0.516934 -2.732233,1.267767 -4.5,-0.5 -1.5,-1.5 -1.033333,-4.002223 -0.5,-4.5 l 7.4999998,-7 6.5,-2 z"
+       id="path2682"
+       style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible" />
+    <path
+       d="M 36,20 A 16,16 0 1 1 4,20 16,16 0 1 1 36,20 z"
+       transform="matrix(-1,0,0,1,48.01255,0)"
+       id="path4119"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+    <path
+       d="m 18.512551,29.5 -2,6.5 -6.9999998,7.5 c -0.482472,0.516934 -2.732233,1.267767 -4.5,-0.5 -1.5,-1.5 -1.033333,-4.002223 -0.5,-4.5 l 7.4999998,-7 6.5,-2 z"
+       id="path15511"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;marker:none;visibility:visible;display:inline;overflow:visible" />
+  </g>
+</svg>
