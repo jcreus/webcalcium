@@ -51,6 +51,7 @@ webca.DBInterface.prototype = {
     },
 
     addEvent: function (subject, contents, eventtimestamp, tags, callback) {
+        var tags = this._parseTags(tags);
         var addedtimestamp = new Date().getTime();
 
         var transaction = this.db.transaction(["events"], (window.webkitIDBTransaction != undefined) ? window.webkitIDBTransaction.READ_WRITE : "readwrite");
@@ -74,6 +75,7 @@ webca.DBInterface.prototype = {
     },
 
     updateEvent: function (id, subject, contents, eventtimestamp, tags, callback) {
+        var tags = this._parseTags(tags);
         var addedtimestamp = new Date().getTime();
 
         var transaction = this.db.transaction(["events"], (window.webkitIDBTransaction != undefined) ? window.webkitIDBTransaction.READ_WRITE : "readwrite");
@@ -131,7 +133,7 @@ webca.DBInterface.prototype = {
                 if (callback) callback(list);
             } else {
                 if ((!range.length) || ((result.value.eventtimestamp >= range[0]) && (result.value.eventtimestamp <= range[1]))) {
-                    if ((!fulltext) || ((result.value.subject.indexOf(fulltext) != -1) || (result.value.contents.indexOf(fulltext) != -1))) {
+                    if ((!fulltext) || ((result.value.subject.toLowerCase().indexOf(fulltext.toLowerCase()) != -1) || (result.value.contents.toLowerCase().indexOf(fulltext.toLowerCase()) != -1))) {
                         list[list.length] = result.value;
                     }
                 }
@@ -156,5 +158,16 @@ webca.DBInterface.prototype = {
             toastr.error("An unknown error has occurred. Please, reload the page and try again", "Unknown error");
         }
 
+    },
+
+    _parseTags: function (tags) {
+        var out = [];
+        for (var i=0; i<tags.length; i++) {
+            var t = tags[i].replace(/^\s*/, '').replace(/\s*$/, '');
+            if (t != "") {
+                out[out.length] = t;
+            }
+        }
+        return out;
     }
 }

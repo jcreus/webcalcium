@@ -11,15 +11,14 @@ webca.Event = function (text, eventview, n) {
 	this.main.className = "event-text-container"
 	this.element.appendChild(this.main);
 
-	var _Date = null;
-	var _DateInput = null;
-	var date = null;
-	var Tags = null;
-	var realtags = null;
+	var _Date;
+	var _DateInput;
+	var data;
+	var realtags;
+	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 	this.date = document.createElement("div");
 	this.date.className = "event-text event-date";
-	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 	date = new Date(text.eventtimestamp);
 
 	if (text.eventtimestamp) {
@@ -52,7 +51,7 @@ webca.Event = function (text, eventview, n) {
 	} else {
 		this.tags.style.display = "none";
 	}
-	Tags = document.createElement("input");
+	var Tags = document.createElement("input");
 	Tags.style.display = "none";
 	Tags.value = text.tags.join(',');
 	Tags.placeholder = "Tags";
@@ -70,9 +69,9 @@ webca.Event = function (text, eventview, n) {
 	Subject.value = text.subject;
 	this.submain.appendChild(Subject);
 
-	var contents = document.createElement("pre");
+	var contents = document.createElement("div");
 	contents.className = "event-contents";
-	contents.appendChild(document.createTextNode(text.contents));
+	contents.innerHTML = text.contents.replace(/\n/g, "<br>");
 	this.submain.appendChild(contents);
 
 	var Contents = document.createElement("textarea");
@@ -526,14 +525,18 @@ webca.AboutView = function () {
 	this.text.appendChild(p);
 	
 	var p = document.createElement("h2");
-	p.appendChild(document.createTextNode("Techincal part"));
+	p.appendChild(document.createTextNode("Technical part"));
 	this.text.appendChild(p);
 
 	var p = document.createElement("p");
-	p.appendChild(document.createTextNode("This application uses HTML5, CSS3 (transitions, media queries...) and some of the newest JavaScript interfaces (indexedDB, History API...)."));
+	p.appendChild(document.createTextNode("This application uses HTML5, CSS3 (transitions, media queries, fonts, text-overflow...) and some of the newest JavaScript interfaces (indexedDB, History API...)."));
 	this.text.appendChild(p);
 	
 	var p = document.createElement("p");
 	p.appendChild(document.createTextNode("The code is fairly organized: database interactions occur in the file 'database.js' which abstracts the rather complex indexedDB interface; the file 'library.js' contains the UI handler and is mostly independent (since styling occurs in CSS). 'views.js' is the core of it, handling the various views (dashboard, add event...)."));
+	this.text.appendChild(p);
+
+	var p = document.createElement("p");
+	p.appendChild(document.createTextNode("Note that HTML input is allowed in the text contents (not subject, though), because the user fully controls the application and there is no risk of XSS."));
 	this.text.appendChild(p);
 }

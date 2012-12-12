@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
-<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="48" width="48" version="1.0" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 48 48"><metadata id="metadata25"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/></cc:Work></rdf:RDF></metadata>
-	<path id="path9" stroke-linejoin="round" d="m40 39h-28l-4-4v-27h32v31z" stroke="#0f1948" stroke-linecap="round" stroke-width="6" fill="none"/><path id="path11" d="m39.8 38.7h-27.8l-3.8-3.8v-26.1h31.6v29.9z" stroke="#0f1948" fill="#0f1948"/>
-	<g id="crop_x0020_marks" stroke="#000">
-		<path id="path20" fill="none" d="m48 48h-48v-48h48v48z"/>
-	</g>
-<path id="path13" d="m22.48 9.1c0-0.2-0.2-0.2-0.4-0.1l-11 11.1c-0.4 0.4-0.2 0.8 0 1l11.1 11.7c0.1 0.1 0.3 0 0.3-0.1l-0.4-7.6 5 0.526c1 0 2 0.974 2 3.474v3c0 2.9-5 3.1-5 4s2 2 2 2h3c4 0 6-4.3 6-8v-5c0-6-3.3-9-8.1-9h-4.9l0.4-7z" fill="#fff"/></svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   xml:space="preserve"
+   height="48"
+   width="48"
+   version="1.0"
+   viewBox="0 0 48 48"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="back-active.svg"><defs
+   id="defs11" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="586"
+   inkscape:window-height="412"
+   id="namedview9"
+   showgrid="false"
+   inkscape:zoom="4.9166667"
+   inkscape:cx="24"
+   inkscape:cy="24"
+   inkscape:window-x="0"
+   inkscape:window-y="27"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="svg2" /><metadata
+   id="metadata25"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata>
+	<path
+   id="path9"
+   stroke-linejoin="round"
+   d="m40 39h-28l-4-4v-27h32v31z"
+   stroke="#0f1948"
+   stroke-linecap="round"
+   stroke-width="6"
+   fill="none" /><path
+   id="path11"
+   d="m39.8 38.7h-27.8l-3.8-3.8v-26.1h31.6v29.9z"
+   stroke="#0f1948"
+   fill="#0f1948" />
+	
+<path
+   id="path13"
+   d="m22.48 9.1c0-0.2-0.2-0.2-0.4-0.1l-11 11.1c-0.4 0.4-0.2 0.8 0 1l11.1 11.7c0.1 0.1 0.3 0 0.3-0.1l-0.4-7.6 5 0.526c1 0 2 0.974 2 3.474v3c0 2.9-5 3.1-5 4s2 2 2 2h3c4 0 6-4.3 6-8v-5c0-6-3.3-9-8.1-9h-4.9l0.4-7z"
+   fill="#fff" /></svg>
