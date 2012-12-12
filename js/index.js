@@ -22,7 +22,6 @@
 	var ui = new webca.Interface(); // UI handler
 
 	var dbinterface = new webca.DBInterface(); // Database handler
-	dbinterface.connect(load); // Connect to the database and create it, if required
 
 	views = {
 		dashboard: new webca.DashboardView(dbinterface, ui),
@@ -51,19 +50,14 @@
 		views.dashboard.view.lateral.removeClass("nottoday");
 		menus.back.element.removeClass("doshow");
 		this.style.display = "none";
-	})
+	});
 
-	function load() {
-		// It make take longer if it needs to create the database, let's check if onload has been fired.
-		// If it hasn't, we add the event; else, we fire it ourselves (it won't fire if the listener is
-		// added after being fired).
-		if (document.readyState == "complete") {
+	window.addEventListener("load", function () {
+		dbinterface.connect(function () { // Firefox requires loaded DOM to open indexedDBs.
 			DOMload();
-		} else {
-			window.addEventListener('load', DOMload);
-		}
-		views.dashboard.update();
-	}
+			views.dashboard.update();
+		}); // Connect to the database and create it, if required
+	});
 
 	function DOMload() {
 		document.body.appendChild(ui.element);

@@ -37,10 +37,10 @@ webca.DBInterface.prototype = {
 
                 setVersionRequest.onsuccess = function () {
                     setSchema.bind(this)();
-                    callback();
+                    if (callback) callback();
                 }.bind(this);
             } else {
-                callback();
+                if (callback) callback();
             }
         }.bind(this);
 
