@@ -234,6 +234,7 @@ webca.EventView.prototype = {
 }
 
 webca.PanelView = function (intf, dashboard, ui) {
+	this.intf = intf;
 	this.data = null;
 	this.ui = ui;
 	this.dashboard = dashboard;
@@ -283,9 +284,37 @@ webca.PanelView.prototype = {
 			this.lateral.appendChild(clear);
 		}
 
+		var db = this.intf;
+		var dash = this.dashboard;
 		this.lis = [];
 		for (var i=0; i<data.length; i++) {
 			var li = document.createElement("li");
+			li.draggable = true;
+			li.addEventListener("dragstart", function (event) {
+				$("#trash").fadeIn();
+				event.dataTransfer.setData("Text", this)
+			}.bind(data[i].id));
+			li.addEventListener("dragend", function (event) {
+				$("#trash").fadeOut().removeClass("dragging");
+				$(".dragover").removeClass("dragover");
+			}.bind(data[i].id));
+			li.ondragover = function (event) {
+				$(".dragover").removeClass("dragover");
+				$(this).addClass("dragover");
+				return false;
+			};
+			li.ondrop = function (event) {
+				var targetid = this[0].getAttribute("data-id");
+				var sourceid = event.dataTransfer.getData("text/plain");
+
+				db.changePositions(sourceid, targetid, function () {
+					dash.update(function () {
+						this[1].activate(null, null, sourceid);
+					}.bind(this));
+				}.bind(this));
+
+				return false;
+			}.bind([li,this]);
 			li.appendChild(document.createTextNode(data[i].subject));
 			li.addEventListener("click", function () {
 				this.that.activate(this.li);

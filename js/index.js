@@ -73,6 +73,15 @@
 		views.search.date2 = new Kalendae.Input(views.search.time2);
 		setMaxWidth();
 
+		$(document.body).append($("<img></img>")
+			.attr("src", "img/trash.svg")
+			.attr("id", "trash")
+			.bind("dragover", function () { $(this).addClass("dragging"); return false; })
+			.bind("dragleave", function () { $(this).removeClass("dragging"); return false; })
+			.bind("drop", function (event) { dbinterface.removeEvent(parseInt(event.originalEvent.dataTransfer.getData("text/plain")), function () {
+				views.dashboard.update();
+			}); }));
+
 		$(window).bind('resize', function () { // So that 
 			setMaxWidth();
 		});

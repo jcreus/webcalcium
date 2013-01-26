@@ -187,6 +187,10 @@ html, body {
 	margin-top:0px;
 }
 
+.lateral-panel .dragover {
+	background:lightblue;
+}
+
 .lateral-panel .active {
 	background:#C2AA71;
 	color:white;
@@ -355,4 +359,16 @@ html, body {
 
 * {
 	font-family:'Open Sans', sans-serif;
+}
+
+#trash {
+	display:none;
+	position:fixed;
+	bottom:5px;
+	right:5px;
+	width:128px;
+}
+
+.dragging {
+	border:1px solid gray;
 }
